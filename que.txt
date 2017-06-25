@@ -1,0 +1,19 @@
+This is a preliminary assignment which will be used in following assignments.  In this assignment, you will write in OCaml a BIGNUM package
+where you will implement arithmetic for arbitrarily large numbers, using lists of digits to implement an integer.
+
+The data type can be represented in OCaml as
+
+type bigint = sign * int list
+
+and sign = Neg | NonNeg;;
+
+with the representational invariant that the elements of the int list are between 0 and 9, and are presented most significant digit first, and that there are no unnecessary leading zeros.
+
+You will need to implement the following operations in the package:
+
+ Arithmetic operations: addition, multiplication, subtraction, quotient and remainder -- all on two bigint numbers, returning a bigint
+Arithmetic operations of unary negation and absolute value. 
+Comparison operations: equal, greater_than, less_than, great_or_equal, less_or_equal -- between two bigint numbers returning a boolean
+Functions to present the result in the form of a string. 
+conversion functions from OCaml int to bigint. 
+Define suitable exceptions when an operation is not defined.
